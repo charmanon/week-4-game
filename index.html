@@ -8,8 +8,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel=
-    "stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -20,20 +19,46 @@
   </head>
   <body>
 
-  <header class="jumbotron"> <img id="logo" src="assets/images/logo.png">Melee</header>
+  <header class="jumbotron"> <img id="logo" src="assets/images/logo.png">Melee</header><p>Pick a character to attack and beat them up until they die!</p>
   <div class="container-fluid">
-    <div class=" col-md-1 col-lg-1"></div>
-    <div class="marco col-xs-12 col-md-10 col-lg-10"><img class="img-responsive" id="marco" src="assets/images/marco.gif"></div>
-    <div class="eri"></div>
-    <div class="tarma"></div>
-    <div class="fio"></div>
+    <div id="background">
+      <img class="img-responsive" id="soldier-select" src="assets/images/soldierselect.png">
+    </div>
+   <div class="container-fluid" id="selection">
+      <div class="character marco"><img class= "img-responsive" id="marco" src="assets/images/blackmarco.png"></div>
+      <div class="character eri"><img class= "img-responsive" id="eri" src="assets/images/blackeri.png"></div>
+      <div class="character tarma"><img class= "img-responsive" id="tarma" src="assets/images/blacktarma.png"></div>
+      <div class="character fio"><img class= "img-responsive" id="fio" src="assets/images/blackfio.png"></div>
+    </div>
     <div class="menu"></div>
-    <div class="p1"><img id="p1" src=""></div>
-    <div class="p2"></div>
-    <div class="p3"></div>
-    <div class="p4"></div>
+    <div class="container-fluid" id="health">
+        <div id="player1"></div>
+        <div id="p1health"></div> 
+        <div id="player2"></div>
+        <div id="p2health"></div>
+        <div id="player3"></div>
+        <div id="p3health"></div>    
+        <div id="player4"></div>
+        <div id="p4health"></div>
+    </div>
+    <div class="container-fluid" id="gameplay">
+        <div class="p1">
+        <button type="button" id="attack" class="btn btn-primary disabled">Attack</button>
+        <img class="img-responsive" id="p1" src=""></div>
+      <div class="p2 player">
+        <img class="img-responsive img-hor-vert" id="p2" src=""></div>
+      <div class="p3 player">
+        <img class="img-responsive img-hor-vert" id="p3" src=""></div>
+      <div class="p4 player">
+        <img class="img-responsive img-hor-vert" id="p4" src=""></div>
+    </div>
   </div>
-  <audio loop id="battlenoise" autoplay="autoplay" src="assets/sounds/battle.mp3"></audio>
+  <audio loop id="battlenoise" autoplay="autoplay" src="assets/sounds/select.mp3"></audio>
+  <audio id="back-noise" autoplay="autoplay" src=""></audio>
+  <footer class="footer">
+    &copy; Copyright 2017 Charlotte Anongos
+    All rights reserved to SNK. I do not own Metal Slug, SNK owns that privilege. 
+  </footer>
   <script src="assets/javascript/helper.js">
   </script> 
   <script src="assets/javascript/game.js">
