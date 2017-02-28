@@ -194,11 +194,11 @@
 		p3.counter = char[2].counter;
 		p3death = char[2].death;
 		player3.innerHTML = char[2].name;
-		p4.src = char[3].img;
-		p4health = char[3].health;		
-		p4.counter = char[3].counter;
-		player4.innerHTML = char[3].name;
-		p4death = char[3].death;
+		p4.src = char[0].img;
+		p4health = char[0].health;		
+		p4.counter = char[0].counter;
+		player4.innerHTML = char[0].name;
+		p4death = char[0].death;
 		back.src = background;
 		$("#attack").css("opacity","1");
 		$("#soldier-select").css("width", "800px");

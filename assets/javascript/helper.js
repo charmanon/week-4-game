@@ -32,7 +32,7 @@ var eri = {
 
 var marco = {
 	name: "Marco",
-	health: 50,
+	health: 100,
 	attack: 10,
 	counter: 20,
 	select: "assets/images/colormarco.png",
