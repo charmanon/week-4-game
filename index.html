@@ -19,8 +19,8 @@
   </head>
   <body>
 
-  <header class="jumbotron"> <img id="logo" src="assets/images/logo.png">Melee</header><p>Pick a character to attack and beat them up until they die!</p>
-  <div class="container-fluid">
+  <header class="jumbotron"> <img id="logo" src="assets/images/logo.png">Melee</header>
+  <div class="container-fluid main">
     <div id="background">
       <img class="img-responsive" id="soldier-select" src="assets/images/soldierselect.png">
     </div>
@@ -30,21 +30,25 @@
       <div class="character tarma"><img class= "img-responsive" id="tarma" src="assets/images/blacktarma.png"></div>
       <div class="character fio"><img class= "img-responsive" id="fio" src="assets/images/blackfio.png"></div>
     </div>
-    <div class="menu"></div>
+    <div class="menu">
+      <div id="restart">Play Again</div>
+    </div>
     <div class="container-fluid" id="health">
-        <div id="player1"></div>
-        <div id="p1health"></div> 
-        <div id="player2"></div>
-        <div id="p2health"></div>
-        <div id="player3"></div>
-        <div id="p3health"></div>    
-        <div id="player4"></div>
-        <div id="p4health"></div>
+        <div id="player1" class="playername"></div>
+        <div id="p1health" class="health"></div> 
+        <div id="player2" class="playername"></div>
+        <div id="p2health" class="health"></div>
+        <div id="player3" class="playername"></div>
+        <div id="p3health" class="health"></div>    
+        <div id="player4" class="playername"></div>
+        <div id="p4health" class="health"></div>
     </div>
     <div class="container-fluid" id="gameplay">
         <div class="p1">
         <button type="button" id="attack" class="btn btn-primary disabled">Attack</button>
         <img class="img-responsive" id="p1" src=""></div>
+      <div class="enemy img-hor-vert"><img id="enemy" src=""/>
+      </div>
       <div class="p2 player">
         <img class="img-responsive img-hor-vert" id="p2" src=""></div>
       <div class="p3 player">
@@ -55,6 +59,7 @@
   </div>
   <audio loop id="battlenoise" autoplay="autoplay" src="assets/sounds/select.mp3"></audio>
   <audio id="back-noise" autoplay="autoplay" src=""></audio>
+  <p>Pick a character to attack and beat them up until they die!</p>
   <footer class="footer">
     &copy; Copyright 2017 Charlotte Anongos
     All rights reserved to SNK. I do not own Metal Slug, SNK owns that privilege. 
