@@ -48,10 +48,21 @@
 		  var isP2;
 		  var isP3;
 		  var isP4;
+		$("#marco").attr ("src", marco.black);
+		  fio.src = fio.black;
+		  tarma.src = tarma.black;
+		  eri.src = eri.black;
+		$("#p1").css("opacity", 0);
+		$("#p2").css("opacity", 0);
+		$("#p3").css("opacity", 0);
+		$("#p4").css("opacity", 0);
 		$("#attack").css("opacity",0);
 		$("#gameplay").css("z-index",2);
 		$("#health").css("opacity",0);
-
+		$("#p1health").css("width", 100);
+		$("#p2health").css("width", 100);
+		$("#p3health").css("width", 100);
+		$("#p4health").css("width", 100);
    	}
 
 
@@ -240,7 +251,6 @@
 		$("#p4").attr("src", "");
 	});
 
-
 	$("#attack").on("click", function(){
 		if (isActive && isP2){
 			var health = p2health - attack;
@@ -295,13 +305,6 @@
 			}
 			gameOver();
 	
-			// if (isP2alive == false && isP3alive == false && isP4alive == false){
-			// 	setTimeout(function(){
-			// 		back.src = complete;
-			// 		$("#gameplay").css("opacity",0);
-			// 		$("#health").css("opacity",0);
-			// }, 1500);
-			// }
 		}
 
 		if (isActive && isP4){

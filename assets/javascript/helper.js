@@ -17,7 +17,8 @@ var fio = {
 	counter: 20,
 	select: "assets/images/colorfio.png",
 	img: "assets/images/fio.gif",
-	death: "assets/images/fiodeath.gif"
+	death: "assets/images/fiodeath.gif",
+	black: "assets/images/blackmarco.png"
 }
 
 var eri = {
@@ -27,7 +28,8 @@ var eri = {
 	counter: 40,
 	select: "assets/images/coloreri.png",
 	img: "assets/images/eri.gif",
-	death: "assets/images/erideath.gif"
+	death: "assets/images/erideath.gif",
+	black: "assets/images/blackeri.png"
 }
 
 var marco = {
@@ -38,7 +40,8 @@ var marco = {
 	select: "assets/images/colormarco.png",
 	img: "assets/images/marco.gif",
 	attackgif: "assets/images/marcoattack.gif",
-	death: "assets/images/marcodeath.gif"
+	death: "assets/images/marcodeath.gif",
+	black: "assets/images/blackmarco.png"
 }
 
 var tarma = {
@@ -48,7 +51,8 @@ var tarma = {
 	counter: 20,
 	select: "assets/images/colortarma.png",
 	img: "assets/images/tarma.gif",
-	death: "assets/images/tarmadeath.gif"
+	death: "assets/images/tarmadeath.gif",
+	black: "assets/images/blacktarma.png"
 }
 
 var char = [marco, eri, tarma, fio];
