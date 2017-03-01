@@ -2,7 +2,7 @@
 
 ##Live Link 
 
-https://github.com/sharloteean/week-4-game
+https://sharloteean.github.io/week-4-game
 
 ##Description on how to use the app
 
