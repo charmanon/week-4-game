@@ -23,46 +23,8 @@
   var isP4alive = true;
 
 	function restart(){
-		battlenoise.src = selection;
-		$("#selection").css("z-index", "33");
-		$("#soldier-select").css("width", "600px");
-		back.src = soldier;
-		$(".menu").css("z-index","-99");	
- 		isP1alive = true;
-   		isP2alive = true;
-   		isP3alive = true;
-   		isP4alive = true;	
-   		var attack;
-  		var p1health;
-		  var p2health;
-		  var p3health;
-		  var p4health;
-		  var p2counter;
-		  var p3counter;
-		  var p4counter;
-		  var p1death;
-		  var p2death;
-		  var p3death;
-		  var p4death;
-		  var isActive;
-		  var isP2;
-		  var isP3;
-		  var isP4;
-		$("#marco").attr ("src", marco.black);
-		  fio.src = fio.black;
-		  tarma.src = tarma.black;
-		  eri.src = eri.black;
-		$("#p1").css("opacity", 0);
-		$("#p2").css("opacity", 0);
-		$("#p3").css("opacity", 0);
-		$("#p4").css("opacity", 0);
-		$("#attack").css("opacity",0);
-		$("#gameplay").css("z-index",2);
-		$("#health").css("opacity",0);
-		$("#p1health").css("width", 100);
-		$("#p2health").css("width", 100);
-		$("#p3health").css("width", 100);
-		$("#p4health").css("width", 100);
+   
+		document.location.reload();
    	}
 
 
